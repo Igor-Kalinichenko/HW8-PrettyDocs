@@ -1,0 +1,192 @@
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins/Poppins-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: 700;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 300;
+}
+header {
+    background: #494d55;
+    min-height: 19rem;
+    border-top: 0.3rem solid #40babd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .header-container {
+    color: white;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+header .text-aqua {
+    font-weight: 300;
+}
+header .header-icon, header .text-aqua {
+    color: #40babd;
+}
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: .5rem;
+}
+.heart-icon {
+    color: #ea5395;
+}
+header button {
+    background-color: #1d9bf0;
+    color: #fff;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+header button:hover {
+    background-color: #0c7abf;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+section {
+    max-width: 50rem;
+    text-align: center;
+    margin: 1rem;
+}
+main .main-container h2 {
+    font-weight: 600;
+    color: #494d55;
+}
+main .main-container p {
+    font-size: 0.9rem;
+}
+.btn-download button{
+    background: #40babd;;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem;
+    cursor: pointer;
+}
+.btn-download button:hover {
+    background: #3aa7aa;
+}
+main .cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 2rem 1rem;
+    border: 1px solid #f0f0f0;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+.cards:hover::after {
+    content: ' ';
+    position: absolute;
+    background: rgba(0,0,0,0.1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.3rem;
+}
+.cards h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cards p {
+    font-size: 0.9rem;
+}
+.cards .card-icon {
+    font-size: 2rem;
+}
+.first-card {
+    border-top: 0.3rem solid #75c181;
+}
+.first-card .card-icon, .first-card:hover h5 {
+    color: #75c181;
+}
+.second-card {
+    border-top: 0.3rem solid #ea5395;
+}
+.second-card .card-icon, .second-card:hover h5 {
+    color: #ea5395;
+}
+.third-card {
+    border-top: 0.3rem solid #58bbee;
+}
+.third-card .card-icon, .third-card:hover h5 {
+    color: #58bbee;
+}
+.fourth-card {
+    border-top: 0.3rem solid #8a40a7;
+}
+.fourth-card .card-icon, .fourth-card:hover h5 {
+    color: #8a40a7;
+}
+.fifth-card {
+    border-top: 0.3rem solid #40babd;
+}
+.fifth-card .card-icon, .fifth-card:hover h5 {
+    color: #40babd;
+}
+.sixth-card {
+    border-top: 0.3rem solid #f88c30;
+}
+.sixth-card .card-icon, .sixth-card:hover h5 {
+    color: #f88c30;
+}
+footer {
+    background: #26282c;
+    text-align: center;
+    color: #999a9b;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+footer a {
+    color: #3ca7aa;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .cards {
+        width: 48%;
+    }
+}
